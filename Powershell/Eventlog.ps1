@@ -1,0 +1,1 @@
+﻿Write-EventLog -LogName "Application" -Source "Powershell" -EventID 3001 -EntryType Information -Message "Unlocking FSLogix User Profile" -Category 1 -RawData 10,20

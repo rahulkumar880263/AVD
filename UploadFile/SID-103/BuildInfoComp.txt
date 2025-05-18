@@ -1,0 +1,13 @@
+Compare BuildInfo version between Staging and AVDDeploy folder.  - Done
+If the AVDDeploy Folder has the same BuildInfo version then leave it as it is.
+If AVDDeploy Folder has older BuildInfo version then rename the NBDesktop folder as NBDesktop_Old.
+If NBDesktop_Old is already present then delete the old NBDesktop_Old folder and then rename NBDesktop folder to NBDesktop_Old.
+Copy entire NBDesktop folder from Staging folder to AVDDeploy folder.
+
+
+Task scheduler will run the script to compare NBDesktop BuildInfo version present in the host machine and AVDDeploy folder located in the central storage.
+If the AVDDeploy Folder has the same BuildInfo version then leave it as it is.
+If Hostmachine NBDesktop Folder has older BuildInfo version then rename the NBDesktop folder as NBDesktop_Old and copy entire NBDesktop Folder from AVDDeploy Folder.
+If NBDesktop_Old is already present then delete the old NBDesktop_Old folder and then rename NBDesktop folder to NBDesktop_Old.
+Copy entire NBDesktop folder from Staging folder to AVDDeploy folder.
+
