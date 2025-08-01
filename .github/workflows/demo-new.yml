@@ -1,0 +1,18 @@
+name: Test-Workflow
+on:
+  workflow_dispatch
+
+env:
+  Day_Of_the_Week: Monday
+
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps: 
+      - name: "Say Hello, it's Monday"
+        run: echo $Greeting $First_name. Today is $Day_Of_The_Week
+        env:
+          First_name: Rahul
