@@ -20,10 +20,8 @@ jobs:
     name: Terraform Format
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Checking Terraform version"
-             terraform --version
+      - run: echo "Installing Terraform"
              sudo apt update
              sudo apt install terraform
-             echo "Terraform is installed"
              terraform --version
       
