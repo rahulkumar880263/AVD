@@ -21,7 +21,7 @@ jobs:
     name: Terraform Install
     runs-on: ubuntu-latest
     steps:
-      - run: 
+      - run: |
           echo "Installing Terraform"
           sudo apt update
           sudo apt install terraform
