@@ -26,10 +26,5 @@ jobs:
           sudo apt update
           sudo apt install terraform
           terraform --version
-
-  job3:
-    name: Terraform Format
-    runs-on: ubuntu-latest
-    steps: 
-      - run: terraform init
+          terraform init
       
