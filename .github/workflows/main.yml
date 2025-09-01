@@ -13,5 +13,17 @@ jobs:
     name: Static Code Analyss
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: echo "This is my first yaml file"
+        - uses: actions/checkout@v4
+        - run: echo "This is my first yaml file"
+
+  job2:
+    name: Terraform Format
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Checking Terraform version"
+             terraform --version
+             sudo apt update
+             sudo apt install terraform
+             echo "Terraform is installed"
+             terraform --version
+      
