@@ -24,7 +24,7 @@ jobs:
       - run: |
           echo "Installing Terraform"
           sudo apt update
-          snap install terraform
+          sudo snap install terraform
           terraform --version
           terraform init
       
